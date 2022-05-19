@@ -1,0 +1,31 @@
+{
+  "name": "miniwebpack",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "理解webpack核心思想",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MEIYA-yl/miniWebPack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MEIYA-yl/miniWebPack/issues"
+  },
+  "homepage": "https://github.com/MEIYA-yl/miniWebPack#readme",
+  "dependencies": {
+    "@babel/parser": "^7.17.12",
+    "@babel/traverse": "^7.17.12",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "ejs": "^3.1.8"
+  }
+}

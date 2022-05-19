@@ -1,0 +1,29 @@
+;(function(modules){
+function require(id){
+// 对应的路径映射函
+const [fn, mapping] = modules[id];
+
+const module = {
+exports: {}
+}
+
+function localRequire(filePath){
+const id = mapping[filePath];
+return require(id);
+}
+
+fn(localRequire, module, module.exports);
+
+return module.exports;
+}
+
+
+// 执行入口js
+require(0);
+})({
+<% data.forEach(info=>{ %>
+	<%- info["id"] %>: [function (require, module, exports){
+		<%- info["code"] %>
+			},<%- JSON.stringify(info["mapping"]) %>],
+				<% }) %>
+					});
