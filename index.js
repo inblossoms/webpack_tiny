@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import parser from '@babel/parser'; // 将提取的文件内容转译成ast
-import traverse from '@babel/traverse'; // 通过ast获取依赖路径
+import traverse from '@babel/traverse'; // 解析ast获取依赖路径
 import ejs from 'ejs';
 import { transformFromAst } from 'babel-core';// 将esm规范转换成cjs规范
 
