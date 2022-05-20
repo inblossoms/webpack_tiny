@@ -26,4 +26,4 @@
 
 > **构建策略**
 >
-> ![构建策略](https://img01.sogoucdn.com/net/a/04/link?appid=100520145&url=http%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520146%2Fc269f7d78fa30548e94e17e22a4b0532)
+> ![构建策略](https://img01.sogoucdn.com/net/a/04/link?appid=100520145&url=http%3A%2F%2Fimg04.sogoucdn.com%2Fapp%2Fa%2F100520146%2F81227b5e6526764fafc71aa3d4dd4392)
