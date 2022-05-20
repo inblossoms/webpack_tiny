@@ -23,7 +23,7 @@
 })({
 	1: [function (require, module, exports) {
 		// import 必须在文件顶部。
-		// 通过cjs 格式 来出来
+		// 通过cjs 格式 导出来
 		const { foo } = require("./foo.js");
 
 		foo();

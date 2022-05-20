@@ -27,11 +27,16 @@ require(0);
 
 var _foo = require("./foo.js");
 
-// import user from "./user.json";
-(0, _foo.foo)(); // console.log(user, "user");
+var _user = require("./user.json");
 
+var _user2 = _interopRequireDefault(_user);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _foo.foo)();
+console.log(_user2.default, "user");
 console.log("main");
-			},{"./foo.js":1}],
+			},{"./foo.js":1,"./user.json":2}],
 				
 	1: [function (require, module, exports){
 		"use strict";
@@ -48,9 +53,18 @@ var _bar = require("./bar.js");
 function foo() {
   console.log("foo");
 }
-			},{"./bar.js":2}],
+			},{"./bar.js":3}],
 				
 	2: [function (require, module, exports){
+		"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = "{\r\n  \"name\": \"zhangsan\",\r\n  \"hobby\": \"law\"\r\n}\r\n";
+			},{}],
+				
+	3: [function (require, module, exports){
 		"use strict";
 
 Object.defineProperty(exports, "__esModule", {
